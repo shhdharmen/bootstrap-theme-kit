@@ -1,0 +1,32 @@
+.border-thick {
+    border-width: 3px !important;
+  }
+  
+  .brand-new-border {
+    font-weight: 400;
+    padding: 0 4px;
+    :last-child {
+      margin-left: -8px;
+    }
+  }
+  
+  .rounded-big {
+    border-radius: 0.5rem;
+  }
+  
+  .rounded-big-left {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .rounded-big-right {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .rounded-big-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .rounded-big-bottom {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }

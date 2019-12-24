@@ -1,0 +1,10 @@
+.card {
+    @include shadow-1;
+    border: 0;
+    &.bg-secondary,
+    &.bg-dark {
+      .card-header {
+        border-bottom-color: rgba($white, 0.125);
+      }
+    }
+  }

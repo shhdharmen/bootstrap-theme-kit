@@ -1,0 +1,28 @@
+.search-icon {
+    background-image: url(../assets/images/icon-search.svg);
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .form-group-search {
+    position: relative;
+    & > .form-icon-container {
+      background-color: $input-bg;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px 10px;
+      cursor: pointer;
+      height: 36px;
+      width: 46px;
+      transition: background ease-in-out 0.15s;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $input-focus-border-color;
+      }
+    }
+  }

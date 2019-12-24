@@ -1,0 +1,8 @@
+.hoverable {
+    transition: background 0.15s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $input-bg;
+    }
+  }

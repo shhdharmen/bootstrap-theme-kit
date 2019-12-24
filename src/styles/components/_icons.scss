@@ -1,0 +1,11 @@
+.toggle-icon-white {
+    &::after {
+      color: $white;
+    }
+  }
+  
+  .toggle-icon-hidden {
+    &::after {
+      display: none;
+    }
+  }

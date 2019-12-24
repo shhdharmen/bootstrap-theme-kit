@@ -1,0 +1,7 @@
+a {
+    color: $body-color;
+    &:hover {
+      color: $body-color;
+      text-decoration: none;
+    }
+  }

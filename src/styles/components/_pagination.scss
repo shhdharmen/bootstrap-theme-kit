@@ -1,0 +1,16 @@
+.pagination {
+    .page-item {
+      .page-link {
+        border-radius: 0.25rem !important;
+        min-width: 36px;
+        text-align: center;
+        font-weight: 500;
+      }
+      &:not(:first-child) {
+        margin-left: 0.125rem;
+      }
+      &:not(:last-child) {
+        margin-right: 0.125rem;
+      }
+    }
+  }
