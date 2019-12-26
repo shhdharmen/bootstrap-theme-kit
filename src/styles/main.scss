@@ -7,16 +7,20 @@
 @import "vendors/bootstrap";
 
 // 3. Base stuff
-@import "base/base", "base/fonts", "base/typography", "base/helpers", "base/reset";
+@import "base/base", "base/fonts", "base/typography", "base/helpers",
+  "base/reset";
 
 // 4. Layout-related sections
 @import "layout/header", "layout/footer";
 
 // 5. Utilities
-@import "utilities/border", "utilities/colors", "utilities/cursor", "utilities/grid", "utilities/hover", "utilities/font";
+@import "utilities/border", "utilities/colors", "utilities/cursor",
+  "utilities/font";
 
 // 6. Components
-@import "components/button", "components/checkbox", "components/dropdown", "components/navbar", "components/radio", "components/form", "components/icons", "components/pagination", "components/card";
+@import "components/button", "components/checkbox", "components/dropdown",
+  "components/navbar", "components/radio", "components/form", "components/icons",
+  "components/pagination", "components/card";
 
 // 7. Page-specific styles
 @import "pages/home";
