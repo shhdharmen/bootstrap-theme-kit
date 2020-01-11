@@ -29,6 +29,8 @@ Start editing you scss & html files and see your browser reload.
 - Live reload
 - Browsersync
 - Semantic-release
+- ES Lint
+- Prettier
 - Commit message convention by Commitizen
 - Github actions with:
     - NPM Cache
