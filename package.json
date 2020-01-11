@@ -1,14 +1,13 @@
 {
   "name": "bootstrap-theme-kit",
   "version": "0.1.0",
-  "description": "A theme kit for Bootstrap 4",
+  "description": "Quickly generate and showcase your bootstrap theme.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "standard",
-    "ncu": "ncu",
     "scss-7-in-1": "scss-7-in-1",
-    "start": "npx gulp",
-    "build": "npx gulp build",
+    "gulp":"gulp",
+    "start": "npm run gulp",
+    "build": "npm run gulp build",
     "lint": "eslint src/**/*.js && prettier prettier --check src/**/*.js src/**/*html "
   },
   "repository": {
