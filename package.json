@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "scss-7-in-1": "scss-7-in-1",
-    "gulp":"gulp",
+    "gulp": "gulp",
     "start": "npm run gulp",
     "build": "npm run gulp build",
     "lint": "eslint src/**/*.js && prettier prettier --check src/**/*.js src/**/*html "
@@ -38,6 +38,8 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/register": "^7.7.7",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^8.0.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "eslint": "^6.8.0",
@@ -64,7 +66,8 @@
     "npm-check-updates": "^4.0.1",
     "prettier": "1.19.1",
     "pump": "^3.0.0",
-    "scss-7-in-1": "^1.1.2"
+    "scss-7-in-1": "^1.1.2",
+    "semantic-release": "^16.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
