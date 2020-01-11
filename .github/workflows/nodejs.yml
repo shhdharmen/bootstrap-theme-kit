@@ -26,6 +26,6 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist
     - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: npx semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: npx semantic-release
