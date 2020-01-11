@@ -8,7 +8,8 @@
     "gulp": "gulp",
     "start": "npm run gulp",
     "build": "npm run gulp build",
-    "lint": "eslint src/**/*.js && prettier prettier --check src/**/*.js src/**/*html "
+    "lint": "eslint src/**/*.js && prettier prettier --check src/**/*.js src/**/*html ",
+    "commit": "npx git-cz"
   },
   "repository": {
     "type": "git",

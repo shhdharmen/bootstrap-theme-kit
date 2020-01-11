@@ -7,8 +7,10 @@ Quickly generate and showcase your bootstrap theme.
 
 ## Getting Started
 
+First, fork this repo and ...
+
 ```sh
-git clone https://github.com/shhdharmen/bootstrap-theme-kit.git
+git clone <forked-repo-url>
 cd bootstrap-theme-kit
 npm i
 npm start
@@ -17,3 +19,19 @@ npm start
 Browser will open at 300 port.
 
 Start editing you scss & html files and see your browser reload.
+
+## Features
+
+- Bootstrap4, JQuery, PopperJS
+- Gulp
+- SCSS
+- SCSS-7-in-1
+- Live reload
+- Browsersync
+- Semantic-release
+- Commit message convention by Commitizen
+- Github actions with:
+    - NPM Cache
+    - NPM build script
+    - Deploy to Github Pages
+    - Changelog and version management with semantic-release
