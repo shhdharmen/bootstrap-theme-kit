@@ -14,7 +14,7 @@
     "lint": "npm run eslint && npm run prettier && npm run stylelint",
     "lint:fix": "npm run eslint -- --fix && npm run prettier -- --write && npm run stylelint -- --fix",
     "commit": "npx git-cz",
-    "init": "node run init.js"
+    "init": "node init.js"
   },
   "repository": {
     "type": "git",
