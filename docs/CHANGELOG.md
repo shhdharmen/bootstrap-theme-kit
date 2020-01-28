@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.2.0...v1.2.1) (2020-01-28)
+
+
+### Bug Fixes
+
+* 🐛 add location ([8326ee8](https://github.com/shhdharmen/bootstrap-theme-kit/commit/8326ee8d01b8932cf9e68b83ccd6eff38728c71a))
+* 🐛 deploy to github pages action link ([1b979e3](https://github.com/shhdharmen/bootstrap-theme-kit/commit/1b979e3e4187e9385cf177ef189614838586f41c))
+
 # [1.2.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.1.0...v1.2.0) (2020-01-28)
 
 
