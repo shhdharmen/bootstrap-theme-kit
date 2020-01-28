@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.0.0...v1.1.0) (2020-01-28)
+
+
+### Bug Fixes
+
+* 🐛 init script ([e92bcfb](https://github.com/shhdharmen/bootstrap-theme-kit/commit/e92bcfb4dfa0b6e320a620269946a790d7fcfb88))
+
+
+### Features
+
+* 🎸 scripts, index.html, stylelint, eslint ([262eb33](https://github.com/shhdharmen/bootstrap-theme-kit/commit/262eb33efd53af572309a2a98f4647c08376043b))
+
 # 1.0.0 (2020-01-11)
 
 
