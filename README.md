@@ -54,5 +54,5 @@ npm start
 - [Github Actions](https://github.com/features/actions) with
   - [Cache](https://github.com/actions/cache) for faster build
   - Build and Lint scripts
-  - [Deploy to Github Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
+  - [GitHub Pages action](https://github.com/marketplace/actions/github-pages-action)
     - **Pro tip:** As it's deployed to Github Pages, you can also treat it as CDN for your CSS.
