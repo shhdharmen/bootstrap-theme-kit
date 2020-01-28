@@ -8,8 +8,13 @@
     "gulp": "gulp",
     "start": "npm run gulp",
     "build": "npm run gulp build",
-    "lint": "eslint src/**/*.js && prettier prettier --check src/**/*.js src/**/*html ",
-    "commit": "npx git-cz"
+    "eslint": "eslint src/**/*.js src/**/*.html",
+    "prettier": "prettier --check src/**/*.js src/**/*html src/**/*.scss",
+    "stylelint": "stylelint src/**/*.scss --syntax scss",
+    "lint": "npm run eslint && npm run prettier && npm run stylelint",
+    "lint:fix": "npm run eslint -- --fix && npm run prettier -- --write && npm run stylelint -- --fix",
+    "commit": "npx git-cz",
+    "init": "node run init.js"
   },
   "repository": {
     "type": "git",
@@ -45,6 +50,7 @@
     "del": "^5.1.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
@@ -68,7 +74,11 @@
     "prettier": "1.19.1",
     "pump": "^3.0.0",
     "scss-7-in-1": "^1.1.2",
-    "semantic-release": "^16.0.1"
+    "semantic-release": "^16.0.1",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended-scss": "^4.1.0",
+    "stylelint-scss": "^3.13.0"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

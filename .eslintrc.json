@@ -14,5 +14,8 @@
         "ecmaVersion": 2018
     },
     "rules": {
-    }
+    },
+    "plugins": [
+        "html"
+    ]
 }
