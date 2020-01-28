@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.1.0...v1.2.0) (2020-01-28)
+
+
+### Features
+
+* 🎸 add favicon ([348f7cc](https://github.com/shhdharmen/bootstrap-theme-kit/commit/348f7ccc09a18d4417f025615d064d2332d4b0e3))
+
 # [1.1.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.0.0...v1.1.0) (2020-01-28)
 
 
