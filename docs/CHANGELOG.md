@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.2.1...v1.3.0) (2020-02-19)
+
+
+### Features
+
+* **project:** make commitzen friendly, change content of README file in init script ([4b2a7ea](https://github.com/shhdharmen/bootstrap-theme-kit/commit/4b2a7ea6c9c448cae12b9a8de3cb0755ba143a48))
+
 ## [1.2.1](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.2.0...v1.2.1) (2020-01-28)
 
 
