@@ -7,6 +7,7 @@ Quickly ⚡ Generate and Showcase 🎯 your bootstrap theme 🎨. [Get Started](
 <!-- Badges -->
 
 [![GitHub license](https://img.shields.io/github/license/shhdharmen/bootstrap-theme-kit)](https://github.com/shhdharmen/bootstrap-theme-kit/blob/master/LICENSE)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## 🚀 Getting Started
 
