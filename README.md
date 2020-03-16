@@ -39,6 +39,7 @@ npm start
 ## 🏆 Features
 
 - Of course, [Bootstrap](http://getbootstrap.vom)
+- 🌞 Default and 🌙 Dark themes
 - [Gulp](http://gulpjs.com)
 - [SCSS](https://sass-lang.com/)
 - [SCSS-7-in-1](https://sass-guidelin.es/#architecture)
