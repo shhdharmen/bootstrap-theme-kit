@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.4.1...v1.5.0) (2020-03-16)
+
+
+### Features
+
+* **theme:** add theme toggle in sample theme file ([9532f88](https://github.com/shhdharmen/bootstrap-theme-kit/commit/9532f88fdbcf8b03165de019b2d901808bbbb163))
+
 ## [1.4.1](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.4.0...v1.4.1) (2020-03-16)
 
 
