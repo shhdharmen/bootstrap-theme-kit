@@ -27,14 +27,22 @@
     />
 
     <!-- All CSS in one place -->
-    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style-2f0353a57e.css" />
+    <link id="dark-theme-style" rel="stylesheet" />
 
     <!-- TODO: Change below text to your actual theme name -->
     <title>Bootstrap Theme Kit - Sample Theme</title>
   </head>
 
   <body>
+    <nav class="navbar navbar-transparent">
+      <a
+        href="javascript:void()"
+        class="btn btn-outline-default ml-auto"
+        id="theme-toggle"
+        onclick="toggleDark()"
+      ></a>
+    </nav>
     <div class="container">
       <div class="py-3"></div>
       <div class="row align-items-center">
