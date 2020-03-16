@@ -1,3 +1,3 @@
-@import "./footer";
-@import "./header";
-@import "./main-content";
+@forward "./footer";
+@forward "./header";
+@forward "./main-content";

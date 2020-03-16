@@ -1,0 +1,126 @@
+/*!
+ * Generate using Bootstrap Theme Kit v 1.0.1 (https://shhdharmen.github.io/bootstrap-theme-kit/)
+ * Copyright 2020 Dharmen Shah
+ * Licensed under MIT (https://github.com/shhdharmen/bootstrap-theme-kit/blob/master/LICENSE)
+ */
+
+// 1. Configuration and helpers
+@use "abstracts";
+
+// dark variables
+@use 'abstracts/variables-dark'as dark;
+
+// 2. Vendors
+@use "vendors" as * with($white:dark.$white,
+    $gray-100:dark.$gray-100,
+    $gray-200:dark.$gray-200,
+    $gray-300:dark.$gray-300,
+    $gray-400:dark.$gray-400,
+    $gray-500:dark.$gray-500,
+    $gray-600:dark.$gray-600,
+    $gray-700:dark.$gray-700,
+    $gray-800:dark.$gray-800,
+    $gray-900:dark.$gray-900,
+    $black:dark.$black,
+    $blue:dark.$blue,
+    $indigo:dark.$indigo,
+    $purple:dark.$purple,
+    $pink:dark.$pink,
+    $red:dark.$red,
+    $orange:dark.$orange,
+    $yellow:dark.$yellow,
+    $green:dark.$green,
+    $teal:dark.$teal,
+    $cyan:dark.$cyan,
+    $primary:dark.$primary,
+    $secondary:dark.$secondary,
+    $success:dark.$success,
+    $info:dark.$info,
+    $warning:dark.$warning,
+    $danger:dark.$danger,
+    $light:dark.$light,
+    $dark:dark.$dark,
+    $yiq-contrasted-threshold:dark.$yiq-contrasted-threshold,
+    $body-bg:dark.$body-bg,
+    $body-color:dark.$body-color,
+    $link-color:dark.$link-color,
+    $font-family-sans-serif:dark.$font-family-sans-serif,
+    $font-size-base:dark.$font-size-base,
+    $h1-font-size:dark.$h1-font-size,
+    $h2-font-size:dark.$h2-font-size,
+    $h3-font-size:dark.$h3-font-size,
+    $text-muted:dark.$text-muted,
+    $table-accent-bg:dark.$table-accent-bg,
+    $table-border-color:dark.$table-border-color,
+    $input-border-color:dark.$input-border-color,
+    $input-group-addon-color:dark.$input-group-addon-color,
+    $input-group-addon-bg:dark.$input-group-addon-bg,
+    $custom-file-color:dark.$custom-file-color,
+    $custom-file-border-color:dark.$custom-file-border-color,
+    $dropdown-bg:dark.$dropdown-bg,
+    $dropdown-border-color:dark.$dropdown-border-color,
+    $dropdown-divider-bg:dark.$dropdown-divider-bg,
+    $dropdown-link-color:dark.$dropdown-link-color,
+    $dropdown-link-hover-color:dark.$dropdown-link-hover-color,
+    $dropdown-link-hover-bg:dark.$dropdown-link-hover-bg,
+    $nav-link-padding-x:dark.$nav-link-padding-x,
+    $nav-link-disabled-color:dark.$nav-link-disabled-color,
+    $nav-tabs-border-color:dark.$nav-tabs-border-color,
+    $nav-tabs-link-hover-border-color:dark.$nav-tabs-link-hover-border-color,
+    $nav-tabs-link-active-color:dark.$nav-tabs-link-active-color,
+    $nav-tabs-link-active-border-color:dark.$nav-tabs-link-active-border-color,
+    $navbar-padding-y:dark.$navbar-padding-y,
+    $navbar-dark-color:dark.$navbar-dark-color,
+    $navbar-dark-hover-color:dark.$navbar-dark-hover-color,
+    $navbar-light-color:dark.$navbar-light-color,
+    $navbar-light-hover-color:dark.$navbar-light-hover-color,
+    $navbar-light-active-color:dark.$navbar-light-active-color,
+    $navbar-light-toggler-border-color:dark.$navbar-light-toggler-border-color,
+    $pagination-color:dark.$pagination-color,
+    $pagination-bg:dark.$pagination-bg,
+    $pagination-border-width:dark.$pagination-border-width,
+    $pagination-border-color:dark.$pagination-border-color,
+    $pagination-hover-color:dark.$pagination-hover-color,
+    $pagination-hover-bg:dark.$pagination-hover-bg,
+    $pagination-hover-border-color:dark.$pagination-hover-border-color,
+    $pagination-active-bg:dark.$pagination-active-bg,
+    $pagination-active-border-color:dark.$pagination-active-border-color,
+    $pagination-disabled-color:dark.$pagination-disabled-color,
+    $pagination-disabled-bg:dark.$pagination-disabled-bg,
+    $pagination-disabled-border-color:dark.$pagination-disabled-border-color,
+    $jumbotron-bg:dark.$jumbotron-bg,
+    $card-cap-bg:dark.$card-cap-bg,
+    $card-bg:dark.$card-bg,
+    $popover-bg:dark.$popover-bg,
+    $popover-header-bg:dark.$popover-header-bg,
+    $toast-background-color:dark.$toast-background-color,
+    $toast-header-background-color:dark.$toast-header-background-color,
+    $modal-content-bg:dark.$modal-content-bg,
+    $modal-content-border-color:dark.$modal-content-border-color,
+    $modal-header-border-color:dark.$modal-header-border-color,
+    $progress-height:dark.$progress-height,
+    $progress-font-size:dark.$progress-font-size,
+    $progress-bg:dark.$progress-bg,
+    $list-group-bg:dark.$list-group-bg,
+    $list-group-border-color:dark.$list-group-border-color,
+    $list-group-hover-bg:dark.$list-group-hover-bg,
+    $breadcrumb-bg:dark.$breadcrumb-bg,
+    $close-color:dark.$close-color,
+    $close-text-shadow:dark.$close-text-shadow,
+    $pre-color:dark.$pre-color,
+);
+
+// 3. Base stuff
+@use "base";
+
+// 4. Layout-related sections
+@use "layout";
+
+// 5. Utilities
+@use "utilities";
+
+// 6. Components
+@use "components";
+
+// 7. Page-specific styles
+@use "pages";

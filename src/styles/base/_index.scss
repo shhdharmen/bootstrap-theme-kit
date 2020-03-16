@@ -1,4 +1,4 @@
-@import "./base";
-@import "./fonts";
-@import "./reset";
-@import "./typography";
+@forward "./base";
+@forward "./fonts";
+@forward "./reset";
+@forward "./typography";

@@ -5,25 +5,22 @@
  */
 
 // 1. Configuration and helpers
-@import "abstracts/index";
+@use "abstracts";
 
 // 2. Vendors
-@import "vendors/index";
+@use "vendors";
 
 // 3. Base stuff
-@import "base/index";
+@use "base";
 
 // 4. Layout-related sections
-@import "layout/index";
+@use "layout";
 
 // 5. Utilities
-@import "utilities/index";
+@use "utilities";
 
 // 6. Components
-@import "components/index";
+@use "components";
 
 // 7. Page-specific styles
-@import "pages/index";
-
-// 8. Themes
-@import "themes/index";
+@use "pages";

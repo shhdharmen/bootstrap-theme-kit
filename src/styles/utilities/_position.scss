@@ -1,5 +1,0 @@
-@each $position in $positions {
-  .position-#{$position} {
-    position: $position;
-  }
-}

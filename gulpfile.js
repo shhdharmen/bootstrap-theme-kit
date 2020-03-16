@@ -1,5 +1,6 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+sass.compiler = require('sass');
 const logError = sass.logError;
 const concat = require("gulp-concat");
 const rev = require("gulp-rev");
@@ -19,6 +20,7 @@ const browserSync = require("browser-sync").create();
 
 // sources
 const sassSrc = "./src/styles/main.scss";
+const sassDarkSrc = "./src/styles/main-dark.scss";
 const sassFiles = "./src/styles/**/*.scss";
 const assetsSrc = "./src/assets/**/";
 const htmlSrc = "./src/**/*.html";
@@ -41,7 +43,7 @@ const popperJS = "node_modules/popper.js/dist/umd/popper.min.js";
 const bootstrapJS = "node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 // hashing task
-gulp.task("hash", function() {
+gulp.task("hash", function () {
   return gulp
     .src([temp + "**/*.js", temp + "**/*.css"])
     .pipe(rev())
@@ -61,7 +63,7 @@ gulp.task(
 // inject hashed files to html
 gulp.task(
   "update",
-  gulp.series("clean-build", function() {
+  gulp.series("clean-build", function () {
     const manifest = gulp.src(assets + "/rev-manifest.json");
     return gulp
       .src(htmlDest)
@@ -78,6 +80,18 @@ gulp.task("build-sass", () => {
     .pipe(sass().on("error", logError))
     .pipe(autoprefixer())
     .pipe(concat("style.css"))
+    .pipe(write())
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(gulp.dest(cssTemp))
+    .pipe(browserSync.stream());
+});
+gulp.task("build-dark-sass", () => {
+  return gulp
+    .src(sassDarkSrc)
+    .pipe(init())
+    .pipe(sass().on("error", logError))
+    .pipe(autoprefixer())
+    .pipe(concat("style-dark.css"))
     .pipe(write())
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest(cssTemp))
@@ -121,7 +135,7 @@ gulp.task(
 // uglifyJS
 gulp.task(
   "compress-js",
-  gulp.series("bundle-js", function(cb) {
+  gulp.series("bundle-js", function (cb) {
     pump([gulp.src(temp + "**/*.js"), uglify(), gulp.dest(temp)], cb);
   })
 );
@@ -143,7 +157,7 @@ gulp.task("optimise-img", () => {
 // html files build
 gulp.task(
   "build-html",
-  gulp.series(function() {
+  gulp.series(function () {
     return gulp.src(htmlSrc).pipe(gulp.dest(dist));
   })
 );
@@ -154,6 +168,7 @@ gulp.task(
   gulp.parallel(
     "build-html",
     "build-sass",
+    "build-dark-sass",
     "compress-js",
     "optimise-img"
   )
@@ -165,13 +180,14 @@ gulp.task(
   gulp.parallel(
     "build-html",
     "build-sass",
+    "build-dark-sass",
     "bundle-js",
     "optimise-img"
   )
 );
 
 // clean previous build
-gulp.task("clean", function() {
+gulp.task("clean", function () {
   return del([dist]);
 });
 
@@ -187,10 +203,10 @@ gulp.task("delete-assets", () => {
 });
 
 // watching scss/js/html files
-gulp.task("watch", function(done) {
+gulp.task("watch", function (done) {
   gulp.watch(jsSrc, gulp.series("live-reload"));
   gulp.watch(assetsSrc, gulp.series("live-reload"));
-  gulp.watch(sassFiles, gulp.series("build-sass", "live-reload"));
+  gulp.watch(sassFiles, gulp.series("build-sass", "build-dark-sass", "live-reload"));
   gulp.watch(htmlSrc).on(
     "change",
     gulp.series(
@@ -223,7 +239,7 @@ gulp.task(
 // live reloading
 gulp.task(
   "live-reload",
-  gulp.series("clean", "build-all", "update", function(done) {
+  gulp.series("clean", "build-all", "update", function (done) {
     browserSync.reload();
     done();
   })
