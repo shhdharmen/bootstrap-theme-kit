@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.5.0...v1.5.1) (2020-03-16)
+
+
+### Bug Fixes
+
+* **style:** fix light color for dark theme ([76d5759](https://github.com/shhdharmen/bootstrap-theme-kit/commit/76d5759eab69a5cb5cf848c3006adb716af294b4))
+
 # [1.5.0](https://github.com/shhdharmen/bootstrap-theme-kit/compare/v1.4.1...v1.5.0) (2020-03-16)
 
 
