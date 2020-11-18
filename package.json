@@ -76,7 +76,7 @@
     "pump": "^3.0.0",
     "sass": "^1.26.3",
     "scss-7-in-1": "^1.1.2",
-    "semantic-release": "^16.0.1",
+    "semantic-release": "^17.2.3",
     "stylelint": "^13.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-recommended-scss": "^4.1.0",
